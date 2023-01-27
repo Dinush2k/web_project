@@ -1,0 +1,6 @@
+@use "../abstarct/variables" as var;
+
+.color-anim {
+  transition: 500ms;
+  animation: colorChange 10s infinite;
+}

@@ -1,0 +1,14 @@
+// @use "../base/gobal";
+
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
