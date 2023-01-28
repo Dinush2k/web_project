@@ -1,5 +1,9 @@
 @use "../abstarct/variables" as var;
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .color-anim {
   transition: 500ms;
   animation: colorChange 10s infinite;
