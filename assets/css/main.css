@@ -937,5 +937,33 @@ a {
   margin-top: 2rem;
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #ccc;
+  color: #cfcfcf;
+}
+
+.about-area {
+  padding: 8rem 20rem;
+  background-color: #3f43fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.about-area--img {
+  width: 32rem;
+}
+.about-area--contents {
+  color: #fff;
+}
+.about-area--title {
+  font-size: 3rem;
+}
+.about-area--title__link {
+  color: #fff;
+}
+.about-area--title__link:hover {
+  text-shadow: 10px 10px 50px #000;
+}
+.about-area--desc {
+  line-height: 2;
+  color: #cfcfcf;
 }/*# sourceMappingURL=main.css.map */
