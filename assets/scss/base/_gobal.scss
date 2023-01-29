@@ -8,3 +8,11 @@
   transition: 500ms;
   animation: colorChange 10s infinite;
 }
+
+.roadmap-area--line {
+  width: 6rem;
+  height: 0.5rem;
+  border-radius: 6px;
+  margin: 30px auto;
+  background: linear-gradient(to right, #e24997, #2d2ed4);
+}

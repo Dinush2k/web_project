@@ -1,0 +1,149 @@
+@use "../abstarct/variables" as var;
+@use "../abstarct/functions" as func;
+.roadmap-area {
+  padding: 8rem 20rem;
+
+  &--header {
+    text-align: center;
+  }
+
+  &--contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  &--item {
+    transition: 500ms;
+    position: relative;
+    text-align: center;
+    margin-left: 3rem;
+    padding: 3rem 2rem;
+    max-width: 350px;
+    cursor: pointer;
+    filter: grayscale(100%);
+
+    &:hover &__img1::after {
+      animation: rotate-infinite 4000ms linear infinite;
+    }
+    &:hover &__img2::after {
+      animation: rotate-infinite 4000ms linear infinite;
+    }
+    &:hover &__img3::after {
+      animation: rotate-infinite 4000ms linear infinite;
+    }
+
+    &__img1 {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 30px;
+
+      img {
+        width: 7rem;
+        margin-top: 40px;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: -5px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px dotted func.theme-colors();
+      }
+    }
+
+    &__img2 {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 30px;
+
+      img {
+        padding: 12px;
+        width: 9rem;
+        margin-top: 40px;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: -5px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px dotted func.theme-colors();
+      }
+    }
+
+    &__img3 {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 30px;
+
+      img {
+        width: 5rem;
+        margin-top: 40px;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: -5px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px dotted func.theme-colors();
+      }
+    }
+
+    &__contents {
+      margin-top: 2rem;
+
+      h2 {
+        font-weight: 600;
+      }
+
+      p {
+        color: #8b8888;
+        line-height: 1.5;
+      }
+    }
+
+    &:not(:last-child):before {
+      transition: 500ms;
+      position: absolute;
+      top: 30%;
+      right: -20%;
+      content: "";
+      width: 70px;
+      height: 70px;
+      font-weight: 700;
+      font-family: "Font Awesome 6 Free";
+      font-size: 3rem;
+      z-index: 1;
+      line-height: 1;
+      color: #020702;
+    }
+
+    &:hover:not(:last-child):before {
+      right: -25%;
+      color: func.theme-colors();
+    }
+
+    &:hover h2 {
+      color: func.theme-colors();
+    }
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
