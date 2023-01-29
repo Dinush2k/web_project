@@ -3,8 +3,9 @@
 @import "./base/gobal";
 
 // Layout
-@import "../layout/header";
-@import "../layout/background-elements";
+@import "./layout/header";
+@import "./layout/background-elements";
+@import "./layout/footer";
 
 // Components
 @import "./components/buttons";
