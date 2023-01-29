@@ -29,6 +29,11 @@ a {
   background: linear-gradient(to right, #e24997, #2d2ed4);
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   padding: 1rem 20rem;
   display: flex;
@@ -36,11 +41,29 @@ a {
   align-items: center;
   border-bottom: 1px solid #eee;
 }
+@media only screen and (max-width: 576px) {
+  .header {
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header .nav-toggler {
+    margin-left: auto;
+    padding-right: 20px;
+    font-size: 2rem;
+  }
+}
 .header--menu {
   display: flex;
   align-items: center;
   list-style: none;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 576px) {
+  .header--menu {
+    display: none;
+  }
 }
 .header--menu__item > a {
   margin: 1.5rem;
@@ -56,6 +79,11 @@ a {
   color: #3f43fd;
 }
 
+@media only screen and (max-width: 576px) {
+  .background-shapes {
+    display: none;
+  }
+}
 .background-shapes .box1 {
   position: absolute;
   top: 20%;
@@ -991,6 +1019,12 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+@media only screen and (max-width: 576px) {
+  .hero-area {
+    padding: 3rem 1rem;
+    flex-direction: column;
+  }
+}
 .hero-area--contents {
   max-width: 40rem;
   margin-right: 2rem;
@@ -999,11 +1033,23 @@ a {
   font-size: 3rem;
   font-weight: 600;
 }
+@media only screen and (max-width: 576px) {
+  .hero-area--title {
+    font-size: 2rem;
+  }
+}
 .hero-area--desc {
   margin-top: 2rem;
   font-size: 1.2rem;
   line-height: 1.8;
   color: #cfcfcf;
+}
+@media only screen and (max-width: 576px) {
+  .hero-area--desc {
+    width: 200px;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
 }
 
 .about-area {
@@ -1014,6 +1060,13 @@ a {
   align-items: center;
   margin-top: 1rem;
 }
+@media only screen and (max-width: 576px) {
+  .about-area {
+    padding: 3rem 1rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 .about-area--img {
   width: 32rem;
 }
@@ -1022,6 +1075,11 @@ a {
 }
 .about-area--title {
   font-size: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .about-area--title {
+    font-size: 1.5rem;
+  }
 }
 .about-area--title__link {
   color: #fff;
@@ -1033,9 +1091,19 @@ a {
   line-height: 2;
   color: #cfcfcf;
 }
+@media only screen and (max-width: 576px) {
+  .about-area--desc {
+    font-size: 0.7rem;
+  }
+}
 
 .roadmap-area {
   padding: 8rem 20rem;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap-area {
+    padding: 3rem 1rem;
+  }
 }
 .roadmap-area--header {
   text-align: center;
@@ -1045,6 +1113,12 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap-area--contents {
+    flex-direction: column;
+    padding-right: 1.5rem;
+  }
 }
 .roadmap-area--item {
   transition: 500ms;
@@ -1154,9 +1228,21 @@ a {
   line-height: 1;
   color: #020702;
 }
+@media only screen and (max-width: 576px) {
+  .roadmap-area--item:not(:last-child):before {
+    content: "\f107";
+    top: 85%;
+    left: 38%;
+  }
+}
 .roadmap-area--item:hover:not(:last-child):before {
   right: -25%;
   color: #3f43fd;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap-area--item:hover:not(:last-child):before {
+    top: 90%;
+  }
 }
 .roadmap-area--item:hover h2 {
   color: #3f43fd;
@@ -1169,6 +1255,11 @@ a {
   padding: 8rem;
   background-color: #3f43fd;
 }
+@media only screen and (max-width: 576px) {
+  .course-area {
+    padding: 3rem 1rem;
+  }
+}
 .course-area--header {
   text-align: center;
 }
@@ -1176,13 +1267,30 @@ a {
   font-size: 2rem;
   color: #fff;
 }
+@media only screen and (max-width: 576px) {
+  .course-area--header h2 {
+    font-size: 1.2rem;
+  }
+}
 .course-area--header p {
   color: #b4b4b4;
+}
+@media only screen and (max-width: 576px) {
+  .course-area--header p {
+    font-size: 0.8rem;
+  }
 }
 .course-area--contents {
   margin-top: 5rem;
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 576px) {
+  .course-area--contents {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
 }
 .course-area--card {
   background-color: #fff;
@@ -1191,12 +1299,23 @@ a {
   border-radius: 10px;
   overflow: hidden;
 }
+@media only screen and (max-width: 576px) {
+  .course-area--card {
+    width: 290px;
+    height: 40rem;
+  }
+}
 .course-area--card__img {
   width: 360px;
   height: 360px;
 }
 .course-area--card__body {
   padding: 2rem 2rem 0;
+}
+@media only screen and (max-width: 576px) {
+  .course-area--card__body p {
+    font-size: 0.8rem;
+  }
 }
 .course-area--card:hover {
   box-shadow: 2px 2px 30px 10px rgba(0, 0, 0, 0.662745098);
@@ -1209,6 +1328,11 @@ a {
   font-size: 1.2rem;
   color: #999797;
 }
+@media only screen and (max-width: 576px) {
+  .course-area--info a {
+    font-size: 0.9rem;
+  }
+}
 .course-area--info a:hover {
   color: #dfdfdf;
   text-shadow: 5px 6px 10px #000000;
@@ -1218,6 +1342,11 @@ a {
   padding: 8rem 20rem;
   background-color: #e0e0e0;
 }
+@media only screen and (max-width: 576px) {
+  .contact-area {
+    padding: 3rem 1rem;
+  }
+}
 .contact-area--card {
   display: flex;
   justify-content: space-between;
@@ -1225,6 +1354,11 @@ a {
   padding: 2rem 3rem;
   border-radius: 0.5rem;
   background-color: #fff;
+}
+@media only screen and (max-width: 576px) {
+  .contact-area--card {
+    flex-direction: column;
+  }
 }
 .contact-area--card__contents {
   flex-grow: 1;

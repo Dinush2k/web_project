@@ -1,7 +1,13 @@
-@use "../abstarct/functions" as func;
+@use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
+
 .course-area {
   padding: 8rem;
   background-color: func.theme-colors();
+
+  @include mixins.responsive(xs) {
+    padding: 3rem 1rem;
+  }
 
   &--header {
     text-align: center;
@@ -9,10 +15,18 @@
     h2 {
       font-size: 2rem;
       color: #fff;
+
+      @include mixins.responsive(xs) {
+        font-size: 1.2rem;
+      }
     }
 
     p {
       color: #b4b4b4;
+
+      @include mixins.responsive(xs) {
+        font-size: 0.8rem;
+      }
     }
   }
 
@@ -20,6 +34,12 @@
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
+
+    @include mixins.responsive(xs) {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+    }
   }
 
   &--card {
@@ -29,6 +49,11 @@
     border-radius: 10px;
     overflow: hidden;
 
+    @include mixins.responsive(xs) {
+      width: 290px;
+      height: 40rem;
+    }
+
     &__img {
       width: 360px;
       height: 360px;
@@ -36,6 +61,12 @@
 
     &__body {
       padding: 2rem 2rem 0;
+
+      p {
+        @include mixins.responsive(xs) {
+          font-size: 0.8rem;
+        }
+      }
     }
 
     &:hover {
@@ -48,6 +79,10 @@
     a {
       font-size: 1.2rem;
       color: #999797;
+
+      @include mixins.responsive(xs) {
+        font-size: 0.9rem;
+      }
     }
     a:hover {
       color: #dfdfdf;
