@@ -1,0 +1,57 @@
+@use "../abstarct/functions" as func;
+.course-area {
+  padding: 8rem;
+  background-color: func.theme-colors();
+
+  &--header {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    p {
+      color: #b4b4b4;
+    }
+  }
+
+  &--contents {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--card {
+    background-color: #fff;
+    max-width: 360px;
+    height: 45rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &__img {
+      width: 360px;
+      height: 360px;
+    }
+
+    &__body {
+      padding: 2rem 2rem 0;
+    }
+
+    &:hover {
+      box-shadow: 2px 2px 30px 10px #000000a9;
+    }
+  }
+  &--info {
+    text-align: center;
+    margin-top: 3rem;
+    a {
+      font-size: 1.2rem;
+      color: #999797;
+    }
+    a:hover {
+      color: #dfdfdf;
+      text-shadow: 5px 6px 10px #000000;
+    }
+  }
+}

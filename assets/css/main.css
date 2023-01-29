@@ -1121,4 +1121,53 @@ a {
 }
 .roadmap-area--item:hover {
   filter: grayscale(0);
+}
+
+.course-area {
+  padding: 8rem;
+  background-color: #3f43fd;
+}
+.course-area--header {
+  text-align: center;
+}
+.course-area--header h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.course-area--header p {
+  color: #b4b4b4;
+}
+.course-area--contents {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.course-area--card {
+  background-color: #fff;
+  max-width: 360px;
+  height: 45rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.course-area--card__img {
+  width: 360px;
+  height: 360px;
+}
+.course-area--card__body {
+  padding: 2rem 2rem 0;
+}
+.course-area--card:hover {
+  box-shadow: 2px 2px 30px 10px rgba(0, 0, 0, 0.662745098);
+}
+.course-area--info {
+  text-align: center;
+  margin-top: 3rem;
+}
+.course-area--info a {
+  font-size: 1.2rem;
+  color: #999797;
+}
+.course-area--info a:hover {
+  color: #dfdfdf;
+  text-shadow: 5px 6px 10px #000000;
 }/*# sourceMappingURL=main.css.map */
