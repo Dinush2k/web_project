@@ -47,7 +47,20 @@ a {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .header {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+}
 @media only screen and (max-width: 576px) {
+  .header .nav-toggler {
+    margin-left: auto;
+    padding-right: 20px;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .header .nav-toggler {
     margin-left: auto;
     padding-right: 20px;
@@ -61,6 +74,11 @@ a {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 576px) {
+  .header--menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) {
   .header--menu {
     display: none;
   }
@@ -97,6 +115,12 @@ a {
   transform: rotate(360deg);
   -webkit-animation: box-shape linear 5s infinite;
           animation: box-shape linear 5s infinite;
+}
+@media only screen and (min-width: 576px) {
+  .background-shapes .box1 {
+    top: 30%;
+    left: 5%;
+  }
 }
 .background-shapes .box2 {
   position: absolute;
@@ -165,6 +189,12 @@ a {
   -webkit-animation: box-shape linear 5s infinite;
           animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 576px) {
+  .background-shapes .dot2 {
+    top: 35%;
+    right: 40%;
+  }
+}
 .background-shapes .dot3 {
   position: absolute;
   top: 90%;
@@ -201,6 +231,12 @@ a {
   -webkit-animation: box-shape linear 5s infinite;
           animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 576px) {
+  .background-shapes .heart1 {
+    top: 100%;
+    left: 10%;
+  }
+}
 .background-shapes .heart2 {
   font-size: 1.5rem;
   position: absolute;
@@ -223,6 +259,18 @@ a {
   transform: rotate(360deg);
   -webkit-animation: box-shape linear 5s infinite;
           animation: box-shape linear 5s infinite;
+}
+@media only screen and (min-width: 576px) {
+  .background-shapes .circle1 {
+    top: 80%;
+    right: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .circle1 {
+    top: 60%;
+    right: 50%;
+  }
 }
 .background-shapes .circle2 {
   position: absolute;
@@ -1025,6 +1073,17 @@ a {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 576px) {
+  .hero-area {
+    padding: 3rem;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .hero-area img {
+    width: 30rem;
+  }
+}
 .hero-area--contents {
   max-width: 40rem;
   margin-right: 2rem;
@@ -1038,6 +1097,16 @@ a {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .hero-area--title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-area--title {
+    font-size: 3rem;
+  }
+}
 .hero-area--desc {
   margin-top: 2rem;
   font-size: 1.2rem;
@@ -1049,6 +1118,11 @@ a {
     width: 200px;
     font-size: 0.9rem;
     flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .hero-area--desc {
+    font-size: 1rem;
   }
 }
 
@@ -1067,6 +1141,13 @@ a {
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about-area {
+    padding: 3rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 .about-area--img {
   width: 32rem;
 }
@@ -1079,6 +1160,11 @@ a {
 @media only screen and (max-width: 576px) {
   .about-area--title {
     font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .about-area--title {
+    font-size: 2.5rem;
   }
 }
 .about-area--title__link {
@@ -1096,6 +1182,11 @@ a {
     font-size: 0.7rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about-area--desc {
+    font-size: 1rem;
+  }
+}
 
 .roadmap-area {
   padding: 8rem 20rem;
@@ -1108,6 +1199,19 @@ a {
 .roadmap-area--header {
   text-align: center;
 }
+@media only screen and (min-width: 576px) {
+  .roadmap-area--title {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .roadmap-area {
+    padding: 3rem;
+  }
+}
+.roadmap-area--header {
+  text-align: center;
+}
 .roadmap-area--contents {
   display: flex;
   justify-content: center;
@@ -1115,6 +1219,12 @@ a {
   margin-top: 5rem;
 }
 @media only screen and (max-width: 576px) {
+  .roadmap-area--contents {
+    flex-direction: column;
+    padding-right: 1.5rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .roadmap-area--contents {
     flex-direction: column;
     padding-right: 1.5rem;
@@ -1235,11 +1345,23 @@ a {
     left: 38%;
   }
 }
+@media only screen and (min-width: 576px) {
+  .roadmap-area--item:not(:last-child):before {
+    content: "\f107";
+    top: 85%;
+    left: 38%;
+  }
+}
 .roadmap-area--item:hover:not(:last-child):before {
   right: -25%;
   color: #3f43fd;
 }
 @media only screen and (max-width: 576px) {
+  .roadmap-area--item:hover:not(:last-child):before {
+    top: 90%;
+  }
+}
+@media only screen and (min-width: 576px) {
   .roadmap-area--item:hover:not(:last-child):before {
     top: 90%;
   }
@@ -1260,6 +1382,11 @@ a {
     padding: 3rem 1rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .course-area {
+    padding: 3rem;
+  }
+}
 .course-area--header {
   text-align: center;
 }
@@ -1272,6 +1399,11 @@ a {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .course-area--header h2 {
+    font-size: 2rem;
+  }
+}
 .course-area--header p {
   color: #b4b4b4;
 }
@@ -1280,12 +1412,24 @@ a {
     font-size: 0.8rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .course-area--header p {
+    font-size: 0.9rem;
+  }
+}
 .course-area--contents {
   margin-top: 5rem;
   display: flex;
   justify-content: space-between;
 }
 @media only screen and (max-width: 576px) {
+  .course-area--contents {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 576px) {
   .course-area--contents {
     flex-direction: column;
     display: flex;
@@ -1305,6 +1449,12 @@ a {
     height: 40rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .course-area--card {
+    width: 400px;
+    height: 40rem;
+  }
+}
 .course-area--card__img {
   width: 360px;
   height: 360px;
@@ -1315,6 +1465,11 @@ a {
 @media only screen and (max-width: 576px) {
   .course-area--card__body p {
     font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .course-area--card__body p {
+    font-size: 0.9rem;
   }
 }
 .course-area--card:hover {
@@ -1347,6 +1502,11 @@ a {
     padding: 3rem 1rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .contact-area {
+    padding: 3rem;
+  }
+}
 .contact-area--card {
   display: flex;
   justify-content: space-between;
@@ -1358,6 +1518,13 @@ a {
 @media only screen and (max-width: 576px) {
   .contact-area--card {
     flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .contact-area--card {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: initial;
   }
 }
 .contact-area--card__contents {

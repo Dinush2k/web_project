@@ -14,8 +14,19 @@
     font-size: 1.2rem;
   }
 
+  @include mixins.responsive(sm) {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
   .nav-toggler {
     @include mixins.responsive(xs) {
+      margin-left: auto;
+      padding-right: 20px;
+      font-size: 2rem;
+    }
+
+    @include mixins.responsive(sm) {
       margin-left: auto;
       padding-right: 20px;
       font-size: 2rem;
@@ -29,6 +40,10 @@
     text-transform: uppercase;
 
     @include mixins.responsive(xs) {
+      display: none;
+    }
+
+    @include mixins.responsive(sm) {
       display: none;
     }
 

@@ -16,6 +16,12 @@
     margin-top: 0;
   }
 
+  @include mixins.responsive(sm) {
+    padding: 3rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
   &--img {
     width: 32rem;
   }
@@ -29,6 +35,9 @@
 
     @include mixins.responsive(xs) {
       font-size: 1.5rem;
+    }
+    @include mixins.responsive(sm) {
+      font-size: 2.5rem;
     }
 
     &__link {
@@ -46,6 +55,10 @@
 
     @include mixins.responsive(xs) {
       font-size: 0.7rem;
+    }
+
+    @include mixins.responsive(sm) {
+      font-size: 1rem;
     }
   }
 }
