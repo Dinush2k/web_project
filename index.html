@@ -27,24 +27,25 @@
         <h2 class="color-anim">WebDesign</h2>
       </div>
       <div class="nav-toggler">
-        <i class="fa fa-bars"></i>
+        <i class="navIcon fa fa-bars"></i>
+        <i class="navIcon fa fa-times hidden"></i>
       </div>
       <div>
         <ul class="header--menu">
           <li class="header--menu__item">
-            <a href="#" class="active"> Home </a>
+            <a href="#home" class="active"> Home </a>
           </li>
           <li class="header--menu__item">
-            <a href="#"> About </a>
+            <a href="#about"> About </a>
           </li>
           <li class="header--menu__item">
-            <a href="#"> Roadmap </a>
+            <a href="#roadmap"> Roadmap </a>
           </li>
           <li class="header--menu__item">
-            <a href="#"> Courses </a>
+            <a href="#course"> Courses </a>
           </li>
           <li>
-            <a href="#" class="btn-primary"> Contact Us </a>
+            <a href="#contact" class="btn-primary"> Contact Us </a>
           </li>
         </ul>
       </div>
@@ -54,7 +55,7 @@
     <!-- ========== Start Main ========== -->
     <main>
       <!-- ========== Start Hero ========== -->
-      <section class="hero-area">
+      <section id="home" class="hero-area">
         <div class="background-shapes">
           <div class="box1"></div>
           <div class="box2"></div>
@@ -104,7 +105,7 @@
       <!-- ========== End Hero ========== -->
 
       <!-- ========== Start About ========== -->
-      <section class="about-area space-x-5">
+      <section id="about" class="about-area space-x-5">
         <div>
           <img
             src="./assets/img/web-development-illustration.png"
@@ -132,7 +133,7 @@
       <!-- ========== End About ========== -->
 
       <!-- ========== Start Roadmap ========== -->
-      <section class="roadmap-area">
+      <section id="roadmap" class="roadmap-area">
         <div class="roadmap-area--header space-y-1">
           <h2 class="roadmap-area--title">Roadmap to Expertise</h2>
           <p class="roadmap-area--desc">
@@ -177,7 +178,7 @@
       <!-- ========== End Roadmap ========== -->
 
       <!-- ========== Start Courses ========== -->
-      <section class="course-area">
+      <section id="course" class="course-area">
         <div class="course-area--header">
           <h2>Jutsu currently exist!</h2>
           <p>
@@ -255,7 +256,7 @@
       <!-- ========== End Courses ========== -->
 
       <!-- ========== Start Conatact ========== -->
-      <section class="contact-area">
+      <section id="contact" class="contact-area">
         <div class="contact-area--card">
           <form
             action="#"
@@ -320,7 +321,7 @@
       <!-- ========== End Conatact ========== -->
 
       <!-- ========== Start Footer ========== -->
-      <section class="footer-area space-y-2">
+      <footer class="footer-area space-y-2">
         <footer>
           <div>
             <h2>WebDesign</h2>
@@ -340,9 +341,14 @@
             </p>
           </div>
         </footer>
-      </section>
+      </footer>
       <!-- ========== End Footer ========== -->
     </main>
     <!-- ========== End Main ========== -->
+
+    <!-- ========== Start Script ========== -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- ========== End Script ========== -->
   </body>
 </html>
