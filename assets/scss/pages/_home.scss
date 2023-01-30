@@ -1,28 +1,28 @@
 @use "../abstract/mixins" as mixins;
 
 .hero-area {
-  padding: 8rem 20rem;
+  padding: 10rem 20rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   @include mixins.responsive(xs) {
-    padding: 3rem 1rem;
+    padding: 9rem 1rem;
     flex-direction: column;
   }
 
   @include mixins.responsive(sm) {
-    padding: 3rem;
+    padding: 9rem 3rem;
     flex-direction: column;
   }
 
   @include mixins.responsive(lg) {
-    padding: 8rem 10rem;
+    padding: 10rem 10rem;
     flex-direction: row;
   }
 
   @include mixins.responsive(xlg) {
-    padding: 8rem 10rem;
+    padding: 10rem 10rem;
     justify-content: space-between;
   }
 

@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  scroll-margin-top: 100px;
 }
 
 a {
@@ -48,13 +49,13 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .header {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .header {
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.2rem;
   }
 }
@@ -66,13 +67,13 @@ a {
 }
 @media only screen and (min-width: 1200px) {
   .header {
-    padding: 4rem 10rem;
+    padding: 2rem 10rem;
     font-size: 1.6rem;
   }
 }
 @media only screen and (min-width: 1400px) {
   .header {
-    padding: 4rem 10rem;
+    padding: 2rem 10rem;
     font-size: 2rem;
   }
 }
@@ -116,7 +117,7 @@ a {
   .header--menu.show {
     display: block;
     text-align: center;
-    top: 112px;
+    top: 80px;
   }
   .header--menu li {
     padding: 2rem;
@@ -165,6 +166,16 @@ a {
 }
 .header--menu__item > a.active {
   color: #3f43fd;
+}
+.header.navbar-fixed {
+  position: fixed;
+  top: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px 0 #e6e6e6;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 576px) {
@@ -1156,32 +1167,32 @@ a {
 }
 
 .hero-area {
-  padding: 8rem 20rem;
+  padding: 10rem 20rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 @media only screen and (max-width: 576px) {
   .hero-area {
-    padding: 3rem 1rem;
+    padding: 9rem 1rem;
     flex-direction: column;
   }
 }
 @media only screen and (min-width: 576px) {
   .hero-area {
-    padding: 3rem;
+    padding: 9rem 3rem;
     flex-direction: column;
   }
 }
 @media only screen and (min-width: 992px) {
   .hero-area {
-    padding: 8rem 10rem;
+    padding: 10rem 10rem;
     flex-direction: row;
   }
 }
 @media only screen and (min-width: 1200px) {
   .hero-area {
-    padding: 8rem 10rem;
+    padding: 10rem 10rem;
     justify-content: space-between;
   }
 }
@@ -1288,14 +1299,14 @@ a {
   .about-area {
     padding: 6rem 10rem;
     flex-direction: row;
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .about-area {
     padding: 10rem 10rem;
     flex-direction: row;
-    margin-top: 17rem;
+    margin-top: 10rem;
   }
 }
 .about-area--img {

@@ -25,13 +25,13 @@
   @include mixins.responsive(lg) {
     padding: 6rem 10rem;
     flex-direction: row;
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
 
   @include mixins.responsive(xlg) {
     padding: 10rem 10rem;
     flex-direction: row;
-    margin-top: 17rem;
+    margin-top: 10rem;
   }
 
   &--img {
