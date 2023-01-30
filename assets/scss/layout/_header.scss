@@ -24,6 +24,16 @@
     font-size: 1.5rem;
   }
 
+  @include mixins.responsive(xlg) {
+    padding: 4rem 10rem;
+    font-size: 1.6rem;
+  }
+
+  @include mixins.responsive(xxlg) {
+    padding: 4rem 10rem;
+    font-size: 2rem;
+  }
+
   .nav-toggler {
     @include mixins.responsive(xs) {
       margin-left: auto;
@@ -66,6 +76,18 @@
       font-weight: 600;
       color: #242424;
       transition: 200ms;
+
+      @include mixins.responsive(xlg) {
+        font-size: 1.5rem;
+      }
+
+      @include mixins.responsive(xxlg) {
+        font-size: 1.2rem;
+      }
+
+      @include mixins.responsive(xxlg) {
+        font-size: 1rem;
+      }
 
       &:hover {
         color: func.theme-colors("primary-hover");

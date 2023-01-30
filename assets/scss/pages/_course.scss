@@ -101,7 +101,7 @@
       margin-inline: 5rem;
     }
 
-    @include mixins.responsive(xlg) {
+    @include mixins.responsive(xxlg) {
       max-width: 360px;
       height: 45rem;
     }

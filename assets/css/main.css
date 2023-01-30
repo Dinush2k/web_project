@@ -59,6 +59,18 @@ a {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding: 4rem 10rem;
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .header {
+    padding: 4rem 10rem;
+    font-size: 2rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header .nav-toggler {
     margin-left: auto;
@@ -105,6 +117,21 @@ a {
   font-weight: 600;
   color: #242424;
   transition: 200ms;
+}
+@media only screen and (min-width: 1200px) {
+  .header--menu__item > a {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .header--menu__item > a {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .header--menu__item > a {
+    font-size: 1rem;
+  }
 }
 .header--menu__item > a:hover {
   color: #3135e8;
@@ -351,6 +378,12 @@ a {
   display: inline-block;
   cursor: pointer;
 }
+@media only screen and (min-width: 1200px) {
+  .btn, .btn-primary-outlined, .btn-primary {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+}
 .btn-primary {
   background-color: #3f43fd;
   color: #fff;
@@ -385,6 +418,12 @@ a {
   border: none;
   border-radius: 5px;
   outline: none;
+}
+@media only screen and (min-width: 1400px) {
+  .form-control {
+    margin: 10px;
+    padding: 1.8rem;
+  }
 }
 .form-control:focus {
   border: 2px solid #3f43fd;
@@ -1113,6 +1152,12 @@ a {
     flex-direction: row;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .hero-area {
+    padding: 8rem 10rem;
+    justify-content: space-between;
+  }
+}
 @media only screen and (min-width: 576px) {
   .hero-area img {
     width: 50rem;
@@ -1125,6 +1170,11 @@ a {
 @media only screen and (min-width: 992px) {
   .hero-area--contents {
     max-width: 30rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-area--contents {
+    max-width: 50rem;
   }
 }
 .hero-area--title {
@@ -1151,6 +1201,11 @@ a {
     font-size: 3.5rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .hero-area--title {
+    font-size: 4rem;
+  }
+}
 .hero-area--desc {
   margin-top: 2rem;
   font-size: 1.2rem;
@@ -1170,6 +1225,11 @@ a {
   }
 }
 @media only screen and (min-width: 992px) {
+  .hero-area--desc {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
   .hero-area--desc {
     font-size: 1.5rem;
   }
@@ -1204,6 +1264,13 @@ a {
     margin-top: 6rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .about-area {
+    padding: 10rem 10rem;
+    flex-direction: row;
+    margin-top: 17rem;
+  }
+}
 .about-area--img {
   width: 32rem;
 }
@@ -1233,6 +1300,11 @@ a {
     font-size: 3rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .about-area--title {
+    font-size: 3rem;
+  }
+}
 .about-area--title__link {
   color: #fff;
 }
@@ -1253,6 +1325,11 @@ a {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .about-area--desc {
+    font-size: 2rem;
+  }
+}
 
 .roadmap-area {
   padding: 8rem 20rem;
@@ -1268,12 +1345,28 @@ a {
     margin-bottom: 5rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .roadmap-area {
+    padding: 20rem 9rem;
+    margin-bottom: 10rem;
+  }
+}
 .roadmap-area--header {
   text-align: center;
 }
 @media only screen and (min-width: 576px) {
   .roadmap-area--title {
     font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .roadmap-area--title {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .roadmap-area--desc {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -1321,6 +1414,12 @@ a {
   .roadmap-area--item {
     margin-left: 3rem;
     padding: 3rem 2rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .roadmap-area--item {
+    max-width: 40rem;
+    width: 40rem;
   }
 }
 .roadmap-area--item:hover .roadmap-area--item__img1::after {
@@ -1402,9 +1501,19 @@ a {
 .roadmap-area--item__contents h2 {
   font-weight: 600;
 }
+@media only screen and (min-width: 1400px) {
+  .roadmap-area--item__contents h2 {
+    font-size: 2rem;
+  }
+}
 .roadmap-area--item__contents p {
   color: #8b8888;
   line-height: 1.5;
+}
+@media only screen and (min-width: 1400px) {
+  .roadmap-area--item__contents p {
+    font-size: 1.2rem;
+  }
 }
 .roadmap-area--item:not(:last-child):before {
   transition: 500ms;
@@ -1580,7 +1689,7 @@ a {
     margin-inline: 5rem;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   .course-area--card {
     max-width: 360px;
     height: 45rem;
@@ -1665,6 +1774,11 @@ a {
     padding: 8rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .contact-area {
+    padding: 10rem;
+  }
+}
 .contact-area--card {
   display: flex;
   justify-content: space-between;
@@ -1691,9 +1805,20 @@ a {
     padding: 2rem 3rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .contact-area--card {
+    flex-direction: row;
+    padding: 3rem 5rem;
+  }
+}
 @media only screen and (min-width: 992px) {
   .contact-area--card img {
     width: 25rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-area--card img {
+    width: 40rem;
   }
 }
 .contact-area--card__contents {
@@ -1701,6 +1826,11 @@ a {
 }
 .contact-area--card__title {
   font-size: 1.2rem;
+}
+@media only screen and (min-width: 1400px) {
+  .contact-area--card__title {
+    font-size: 2rem;
+  }
 }
 .contact-area--card__desc {
   color: #acaaaa;

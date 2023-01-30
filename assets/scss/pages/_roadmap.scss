@@ -12,6 +12,11 @@
     padding: 1rem 8rem;
     margin-bottom: 5rem;
   }
+
+  @include mixins.responsive(xxlg) {
+    padding: 20rem 9rem;
+    margin-bottom: 10rem;
+  }
   &--header {
     text-align: center;
   }
@@ -20,11 +25,22 @@
     @include mixins.responsive(sm) {
       font-size: 2.5rem;
     }
+
+    @include mixins.responsive(xxlg) {
+      font-size: 3rem;
+    }
+  }
+
+  &--desc {
+    @include mixins.responsive(xxlg) {
+      font-size: 1.5rem;
+    }
   }
 
   @include mixins.responsive(sm) {
     padding: 3rem;
   }
+
   &--header {
     text-align: center;
   }
@@ -63,6 +79,11 @@
     @include mixins.responsive(lg) {
       margin-left: 3rem;
       padding: 3rem 2rem;
+    }
+
+    @include mixins.responsive(xxlg) {
+      max-width: 40rem;
+      width: 40rem;
     }
 
     &:hover &__img1::after {
@@ -150,11 +171,19 @@
 
       h2 {
         font-weight: 600;
+
+        @include mixins.responsive(xxlg) {
+          font-size: 2rem;
+        }
       }
 
       p {
         color: #8b8888;
         line-height: 1.5;
+
+        @include mixins.responsive(xxlg) {
+          font-size: 1.2rem;
+        }
       }
     }
 

@@ -28,6 +28,12 @@
     margin-top: 6rem;
   }
 
+  @include mixins.responsive(xlg) {
+    padding: 10rem 10rem;
+    flex-direction: row;
+    margin-top: 17rem;
+  }
+
   &--img {
     width: 32rem;
 
@@ -55,6 +61,10 @@
       font-size: 3rem;
     }
 
+    @include mixins.responsive(xxlg) {
+      font-size: 3rem;
+    }
+
     &__link {
       color: #fff;
 
@@ -74,6 +84,10 @@
 
     @include mixins.responsive(sm) {
       font-size: 1rem;
+    }
+
+    @include mixins.responsive(xxlg) {
+      font-size: 2rem;
     }
   }
 }

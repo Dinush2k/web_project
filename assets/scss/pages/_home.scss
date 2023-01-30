@@ -21,6 +21,11 @@
     flex-direction: row;
   }
 
+  @include mixins.responsive(xlg) {
+    padding: 8rem 10rem;
+    justify-content: space-between;
+  }
+
   img {
     @include mixins.responsive(sm) {
       width: 50rem;
@@ -33,6 +38,10 @@
 
     @include mixins.responsive(lg) {
       max-width: 30rem;
+    }
+
+    @include mixins.responsive(xlg) {
+      max-width: 50rem;
     }
   }
 
@@ -55,6 +64,10 @@
     @include mixins.responsive(lg) {
       font-size: 3.5rem;
     }
+
+    @include mixins.responsive(xlg) {
+      font-size: 4rem;
+    }
   }
 
   &--desc {
@@ -74,6 +87,10 @@
     }
 
     @include mixins.responsive(lg) {
+      font-size: 1.5rem;
+    }
+
+    @include mixins.responsive(xlg) {
       font-size: 1.5rem;
     }
   }

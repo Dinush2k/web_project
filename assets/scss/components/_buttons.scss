@@ -1,5 +1,6 @@
 @use "../abstract/variables" as var;
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
 .btn {
   padding: 0.8rem 1.6rem;
   border-radius: 6px;
@@ -10,6 +11,11 @@
   outline: none;
   display: inline-block;
   cursor: pointer;
+
+  @include mixins.responsive(xlg) {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
 
   &-primary {
     @extend .btn;
