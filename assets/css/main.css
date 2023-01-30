@@ -117,7 +117,7 @@ a {
   .header--menu.show {
     display: block;
     text-align: center;
-    top: 80px;
+    top: 79px;
   }
   .header--menu li {
     padding: 2rem;
@@ -129,9 +129,31 @@ a {
     color: #020710;
   }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .header--menu {
     display: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0080ff;
+    z-index: 1;
+    transition: 500ms;
+  }
+  .header--menu.show {
+    display: block;
+    text-align: center;
+    top: 79px;
+  }
+  .header--menu li {
+    padding: 2rem;
+  }
+  .header--menu li a {
+    color: #fff;
+  }
+  .header--menu li a.active {
+    color: #020710;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -174,7 +196,7 @@ a {
   right: 0;
   width: 100%;
   background-color: #fff;
-  box-shadow: 1px 1px 2px 0 #e6e6e6;
+  box-shadow: 1px 1 px 2px 0 #e6e6e6;
   z-index: 10;
 }
 

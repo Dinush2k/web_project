@@ -61,36 +61,13 @@
     @include mixins.responsive(xs) {
       display: none;
 
-      position: fixed;
-      top: -100%;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: func.theme-colors("menu-bg");
-      z-index: 1;
-      transition: 500ms;
-
-      &.show {
-        display: block;
-        text-align: center;
-        top: 80px;
-      }
-
-      & li {
-        padding: 2rem;
-
-        a {
-          color: #fff;
-
-          &.active {
-            color: func.theme-colors("dark");
-          }
-        }
-      }
+      @include mixins.mobile-menu;
     }
 
-    @include mixins.responsive(sm) {
+    @include mixins.responsive(sm, "sm-md") {
       display: none;
+
+      @include mixins.mobile-menu;
     }
 
     @include mixins.responsive(lg) {
@@ -133,7 +110,7 @@
     right: 0;
     width: 100%;
     background-color: #fff;
-    box-shadow: 1px 1px 2px 0 #e6e6e6;
+    box-shadow: 1px 1 px 2px 0 #e6e6e6;
     z-index: 10;
   }
 }
