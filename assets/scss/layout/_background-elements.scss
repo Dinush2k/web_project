@@ -133,6 +133,16 @@
       top: 100%;
       left: 10%;
     }
+
+    @include mixins.responsive(lg) {
+      top: 90%;
+      left: 20%;
+    }
+
+    @include mixins.responsive(xlg) {
+      top: 20%;
+      left: 50%;
+    }
   }
 
   .heart2 {

@@ -12,6 +12,10 @@
     padding: 3rem;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 8rem;
+  }
+
   &--card {
     display: flex;
     justify-content: space-between;
@@ -28,6 +32,17 @@
       flex-direction: column;
       padding: 2rem;
       align-items: initial;
+    }
+
+    @include mixins.responsive(lg) {
+      flex-direction: row;
+      padding: 2rem 3rem;
+    }
+
+    img {
+      @include mixins.responsive(lg) {
+        width: 25rem;
+      }
     }
 
     &__contents {
