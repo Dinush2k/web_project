@@ -1174,7 +1174,7 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .hero-area {
-    padding: 9rem 1rem;
+    padding: 3rem 1rem;
     flex-direction: column;
   }
 }
